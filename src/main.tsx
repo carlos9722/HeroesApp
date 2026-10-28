@@ -1,13 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { Button } from './components/ui/button'
 
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+
+import { HeroesApp } from './HeroesApp';
+
+import './index.css';
+
+/**
+ * Inicializa la aplicación React y la monta en el elemento raíz del DOM.
+ */
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <h1>Hola Mundo</h1>
-    <Button>
-      Hola de nuevo
-    </Button>
+    <HeroesApp />
   </StrictMode>,
-)
+);
